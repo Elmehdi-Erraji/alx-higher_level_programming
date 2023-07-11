@@ -1,0 +1,20 @@
+1-my_list
+=========
+
+importing class:
+	>>> MyList = __import__('1-my_list').MyList
+
+checking for module docstring:
+	>>> m = __import__('1-my_list').__doc__
+	>>> len(m) > 1
+	True
+
+checking for class docstring:
+	>>> c = __import__('1-my_list').MyList.__doc__
+	>>> len(c) > 1
+	True
+
+checking for method docstring:
+	>>> f = __import__('1-my_list').MyList.print_sorted.__doc__
+	>>> len(f) > 1
+	True
